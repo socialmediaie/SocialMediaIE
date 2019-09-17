@@ -1,0 +1,53 @@
+.task {
+  margin: 0px;
+  padding: 5px 0px;
+  border-radius: 2px;
+  text-alight: left;
+}
+
+.col-value {
+  background-color: white;
+  padding: 1px;
+  border-radius: 2px;
+  margin: 0px 0px;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: white;
+}
+
+.col-value[data-type]:before {
+  content: attr(data-type);
+  background-color: lightgray;
+  color: black;
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-weight: bold;
+  margin: 0px 5px 0px 0px;
+}
+
+.spanned {
+  background-color: lavender;
+}
+
+.task_data {
+  border-width: 0px 0px 2px 5px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 2px 0px 0px 2px;
+}
+
+.pos {
+  background-color: bisque;
+}
+
+.ner {
+  background-color: cornflowerblue;
+}
+
+.chunk {
+  background-color: darksalmon;
+}
+
+.ccg {
+  background-color: darkseagreen;
+}

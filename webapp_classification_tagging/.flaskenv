@@ -1,0 +1,2 @@
+FLASK_APP=predictor_app.py
+FLASK_ENV=development

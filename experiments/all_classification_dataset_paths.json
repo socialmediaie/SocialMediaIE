@@ -1,0 +1,96 @@
+{
+    "semeval_sentiment": {
+        "dev": [
+            "../data/processed/SENTIMENT/SemEval/dev.json"
+        ],
+        "train": [
+            "../data/processed/SENTIMENT/SemEval/train.json"
+        ],
+        "test": [
+            "../data/processed/SENTIMENT/SemEval/test.json"
+        ]
+    },
+    "clarin_sentiment": {
+        "dev": [
+            "../data/processed/SENTIMENT/Clarin/dev.json"
+        ],
+        "train": [
+            "../data/processed/SENTIMENT/Clarin/train.json"
+        ],
+        "test": [
+            "../data/processed/SENTIMENT/Clarin/test.json"
+        ]
+    },
+    "politics_sentiment": {
+        "dev": [
+            "../data/processed/SENTIMENT/GOP/dev.json",
+            "../data/processed/SENTIMENT/Obama/dev.json"
+        ],
+        "train": [
+            "../data/processed/SENTIMENT/GOP/train.json",
+            "../data/processed/SENTIMENT/Obama/train.json"
+        ],
+        "test": [
+            "../data/processed/SENTIMENT/GOP/test.json",
+            "../data/processed/SENTIMENT/Obama/test.json"
+        ]
+    },
+    "other_sentiment": {
+        "dev": [
+            "../data/processed/SENTIMENT/Airline/dev.json",
+            "../data/processed/SENTIMENT/Healthcare/dev.json"
+        ],
+        "train": [
+            "../data/processed/SENTIMENT/Airline/train.json",
+            "../data/processed/SENTIMENT/Healthcare/train.json"
+        ],
+        "test": [
+            "../data/processed/SENTIMENT/Airline/test.json",
+            "../data/processed/SENTIMENT/Healthcare/test.json"
+        ]
+    },
+    "founta_abusive": {
+        "dev": [
+            "../data/processed/ABUSIVE/Founta/dev.json"
+        ],
+        "train": [
+            "../data/processed/ABUSIVE/Founta/train.json"
+        ],
+        "test": [
+            "../data/processed/ABUSIVE/Founta/test.json"
+        ]
+    },
+    "sarcasm_uncertainity": {
+        "dev": [
+            "../data/processed/UNCERTAINITY/Riloff/dev.json"
+        ],
+        "train": [
+            "../data/processed/UNCERTAINITY/Riloff/train.json"
+        ],
+        "test": [
+            "../data/processed/UNCERTAINITY/Riloff/test.json"
+        ]
+    },
+    "waseem_abusive": {
+        "dev": [
+            "../data/processed/ABUSIVE/WaseemSRW/dev.json"
+        ],
+        "train": [
+            "../data/processed/ABUSIVE/WaseemSRW/train.json"
+        ],
+        "test": [
+            "../data/processed/ABUSIVE/WaseemSRW/test.json"
+        ]
+    },
+    "veridicality_uncertainity": {
+        "dev": [
+            "../data/processed/UNCERTAINITY/Swamy/dev.json"
+        ],
+        "train": [
+            "../data/processed/UNCERTAINITY/Swamy/train.json"
+        ],
+        "test": [
+            "../data/processed/UNCERTAINITY/Swamy/test.json"
+        ]
+    }
+}

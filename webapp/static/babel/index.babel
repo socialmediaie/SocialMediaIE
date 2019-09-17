@@ -1,0 +1,71 @@
+function draw(json_output){
+  const data = json_output["data"];
+  console.log(data);
+  const columns = base.selectAll("div")
+    .data(data)
+    .enter()
+    .append("div")
+    .classed("column", true);
+  
+  function updateColValues(key, spanned){
+    const task_class = key.split("_")[1];
+    return columns.append("div")
+      .classed("col-value", true)
+      .classed(key, true)
+      .classed(task_class, d => {
+        if(!spanned) return true;
+        if(d[key] == "O") return false;
+        return true;
+      })
+      .classed("spanned", d => {
+        if(!spanned) return false;
+        if(d[key] == "O") return false;
+        return true;
+      })
+      .classed("span-start", d => {
+        if(spanned && d[key][0] == "B") return true;
+        return false;
+      })
+      .classed("span-inside", d => {
+        if(spanned && d[key][0] == "I") return true;
+        return false;
+      })
+      .text(d => {
+        if(!spanned) return d[key];
+        if(d[key] != "O") return d[key];
+        return "\u00A0";
+      });
+  }
+  
+  const tokens = updateColValues("tokens", false);
+  
+  const ud_pos = updateColValues("ud_pos", false);
+  const ark_pos = updateColValues("ark_pos", false);
+  const ptb_pos = updateColValues("ptb_pos", false);
+  
+  const multimodal_ner = updateColValues("multimodal_ner", true);
+  const broad_ner = updateColValues("broad_ner", true);
+  const wnut17_ner = updateColValues("wnut17_ner", true);
+  const ritter_ner = updateColValues("ritter_ner", true);
+  const yodie_ner = updateColValues("yodie_ner", true);
+  
+  const ritter_chunk = updateColValues("ritter_chunk", true);
+  const ritter_ccg = updateColValues("ritter_ccg", true);
+}
+
+const base = d3.select("#socialmediaie-output");
+const textarea = d3.select("#socialmediaie-input");
+const predict_button = d3.select("#predict_button");
+const URL = "https://gist.githubusercontent.com/napsternxg/a9946616013e61d51d207b030a7fd1b3/raw/04ab99138f5750894357fcbb271397ca20a6f710/SocialMediaIE_tagger_output.json";
+
+predict_button.on("click", async () => {
+  const json_output = await d3.json(URL, {
+    method: "get",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //body: "entry=" + JSON.stringify(textarea.property('value'))
+  });
+  draw(json_output);
+})
+
+
+

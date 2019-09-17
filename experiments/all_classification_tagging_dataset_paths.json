@@ -1,0 +1,169 @@
+{
+    "semeval_sentiment": {
+        "dev": [
+            "../data/processed/SENTIMENT/SemEval/dev.json"
+        ],
+        "train": [
+            "../data/processed/SENTIMENT/SemEval/train.json"
+        ],
+        "test": [
+            "../data/processed/SENTIMENT/SemEval/test.json"
+        ]
+    },
+    "clarin_sentiment": {
+        "dev": [
+            "../data/processed/SENTIMENT/Clarin/dev.json"
+        ],
+        "train": [
+            "../data/processed/SENTIMENT/Clarin/train.json"
+        ],
+        "test": [
+            "../data/processed/SENTIMENT/Clarin/test.json"
+        ]
+    },
+    "politics_sentiment": {
+        "dev": [
+            "../data/processed/SENTIMENT/GOP/dev.json",
+            "../data/processed/SENTIMENT/Obama/dev.json"
+        ],
+        "train": [
+            "../data/processed/SENTIMENT/GOP/train.json",
+            "../data/processed/SENTIMENT/Obama/train.json"
+        ],
+        "test": [
+            "../data/processed/SENTIMENT/GOP/test.json",
+            "../data/processed/SENTIMENT/Obama/test.json"
+        ]
+    },
+    "other_sentiment": {
+        "dev": [
+            "../data/processed/SENTIMENT/Airline/dev.json",
+            "../data/processed/SENTIMENT/Healthcare/dev.json"
+        ],
+        "train": [
+            "../data/processed/SENTIMENT/Airline/train.json",
+            "../data/processed/SENTIMENT/Healthcare/train.json"
+        ],
+        "test": [
+            "../data/processed/SENTIMENT/Airline/test.json",
+            "../data/processed/SENTIMENT/Healthcare/test.json"
+        ]
+    },
+    "founta_abusive": {
+        "dev": [
+            "../data/processed/ABUSIVE/Founta/dev.json"
+        ],
+        "train": [
+            "../data/processed/ABUSIVE/Founta/train.json"
+        ],
+        "test": [
+            "../data/processed/ABUSIVE/Founta/test.json"
+        ]
+    },
+    "sarcasm_uncertainity": {
+        "dev": [
+            "../data/processed/UNCERTAINITY/Riloff/dev.json"
+        ],
+        "train": [
+            "../data/processed/UNCERTAINITY/Riloff/train.json"
+        ],
+        "test": [
+            "../data/processed/UNCERTAINITY/Riloff/test.json"
+        ]
+    },
+    "waseem_abusive": {
+        "dev": [
+            "../data/processed/ABUSIVE/WaseemSRW/dev.json"
+        ],
+        "train": [
+            "../data/processed/ABUSIVE/WaseemSRW/train.json"
+        ],
+        "test": [
+            "../data/processed/ABUSIVE/WaseemSRW/test.json"
+        ]
+    },
+    "veridicality_uncertainity": {
+        "dev": [
+            "../data/processed/UNCERTAINITY/Swamy/dev.json"
+        ],
+        "train": [
+            "../data/processed/UNCERTAINITY/Swamy/train.json"
+        ],
+        "test": [
+            "../data/processed/UNCERTAINITY/Swamy/test.json"
+        ]
+    },
+    "ptb_pos": {
+        "dev": [
+            "../data/processed/POS/TwitIE/dev.conll", 
+            "../data/processed/POS/Ritter/dev.conll"
+        ],
+        "train": [
+            "../data/processed/POS/Ritter/train.conll"
+        ],
+        "test": [
+            "../data/processed/POS/TwitIE/test.conll", 
+            "../data/processed/POS/Ritter/test.conll"
+        ]
+    },
+    "ark_pos": {
+        "dev": ["../data/processed/POS/Owoputi/dev.conll"],
+        "train": ["../data/processed/POS/Owoputi/train.conll"],
+        "test": ["../data/processed/POS/Owoputi/test.conll"]
+    },
+    "ud_pos": {
+        "dev": ["../data/processed/POS/Tweetbankv2/dev.conll"],
+        "train": [
+            "../data/processed/POS/Tweetbankv2/train.conll", 
+            "../data/processed/POS/DiMSUM2016/train.conll"
+        ],
+        "test": [
+            "../data/processed/POS/Tweetbankv2/test.conll", 
+            "../data/processed/POS/DiMSUM2016/test.conll",
+            "../data/processed/POS/Foster/test.conll",
+            "../data/processed/POS/lowlands/test.conll"
+        ]
+    },
+    "ritter_chunk": {
+        "dev": ["../data/processed/CHUNKING/Ritter/dev.conll"],
+        "train": ["../data/processed/CHUNKING/Ritter/train.conll"],
+        "test": ["../data/processed/CHUNKING/Ritter/test.conll"]
+    },
+    "yodie_ner": {
+        "test": ["../data/processed/NER/YODIE/test.conll"],
+        "dev": ["../data/processed/NER/YODIE/train.conll"],
+        "train": ["../data/processed/NER/YODIE/train.conll"]
+    },
+    "ritter_ner": {
+        "dev": ["../data/processed/NER/Ritter/dev.conll", "../data/processed/NER/WNUT2016/dev.conll"],
+        "test": ["../data/processed/NER/Ritter/test.conll", "../data/processed/NER/WNUT2016/test.conll"],
+        "train": ["../data/processed/NER/Ritter/train.conll", "../data/processed/NER/WNUT2016/train.conll"]
+    },
+    "wnut17_ner": {
+        "dev": ["../data/processed/NER/WNUT2017/dev.conll"],
+        "test": ["../data/processed/NER/WNUT2017/test.conll"],
+        "train": ["../data/processed/NER/WNUT2017/train.conll"]
+    },
+    "neel_ner": {
+        "dev": ["../data/processed/NER/NEEL2016/dev.conll"],
+        "test": ["../data/processed/NER/NEEL2016/test.conll"],
+        "train": ["../data/processed/NER/NEEL2016/train.conll"]
+    },
+    "broad_ner": {
+        "dev": ["../data/processed/NER/BROAD/dev.conll"],
+        "test": ["../data/processed/NER/BROAD/test.conll", 
+                 "../data/processed/NER/Finin/test.conll", 
+                 "../data/processed/NER/Hege/test.conll"],
+        "train": ["../data/processed/NER/BROAD/train.conll", "../data/processed/NER/Finin/train.conll"]
+    },
+    "multimodal_ner": {
+        "dev": ["../data/processed/NER/MultiModal/dev.conll"],
+        "test": ["../data/processed/NER/MSM2013/test.conll", "../data/processed/NER/MultiModal/test.conll"],
+        "train": ["../data/processed/NER/MSM2013/train.conll", "../data/processed/NER/MultiModal/train.conll"]
+    },
+    "ritter_ccg": {
+        "dev": ["../data/processed/SUPERSENSE/Ritter/dev.conll"],
+        "test": ["../data/processed/SUPERSENSE/Ritter/test.conll", "../data/processed/SUPERSENSE/Johannsen2014/test.conll"],
+        "train": ["../data/processed/SUPERSENSE/Ritter/train.conll"]
+    }
+}

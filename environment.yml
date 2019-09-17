@@ -1,0 +1,26 @@
+name: SocialMediaIE
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - intel
+dependencies:
+  - python=3.6
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - tqdm
+  - ipython
+  - ipykernel
+  - pytorch
+  - cudatoolkit=9.0
+  - mkl
+  - intel-openmp
+  - umap-learn
+  - pip:
+    - allennlp
+    - black
+    - pylint
+    - coverage
+    - pep8
