@@ -61,3 +61,7 @@ sphinx-apidoc -o source/ ../SocialMediaIE
 python -m ipykernel install --user --name ${CONDA_DEFAULT_ENV} --display-name "Python (${CONDA_DEFAULT_ENV})"
 ```
 
+
+## Acknowledgements
+
+This library builds upon AllenNLP and Pytorch. Some of the mutli-task learning code is based on the multi-task learning examples in allennlp. 
