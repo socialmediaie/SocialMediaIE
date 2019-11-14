@@ -68,6 +68,7 @@
 * RepLab 2013 (Entity-Oriented Summaries for Reputation Management) - http://nlp.uned.es/replab2013/ https://zenodo.org/record/2536801#.XVrin-hKh3g
 * GermEval office evaluation task - https://projects.fzai.h-da.de/iggsa/projekt/
 * OffenseEval - https://competitions.codalab.org/competitions/20011
+* Frame Semantics Twitter (AAAI 2015) - https://bitbucket.org/lowlands/release/src/master/AAAI15/ (Paper: https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9349)
 
 
 
