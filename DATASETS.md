@@ -70,6 +70,7 @@
 * OffenseEval - https://competitions.codalab.org/competitions/20011
 * Frame Semantics Twitter (AAAI 2015) - https://bitbucket.org/lowlands/release/src/master/AAAI15/ (Paper: https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9349)
 * SemEval 2017 dataset [Gold](https://www.dropbox.com/s/byzr8yoda6bua1b/2017_English_final.zip) - [Task Download](http://alt.qcri.org/semeval2017/task4/index.php?id=download-the-full-training-data-for-semeval-2017-task-4)
+* MTSA - Multiannotated tweet sentiment dataset - https://www.aclweb.org/anthology/N18-1171/ from [Sentiment Analysis: It’s Complicated!](https://www.aclweb.org/anthology/N18-1171/)
 
 
 
