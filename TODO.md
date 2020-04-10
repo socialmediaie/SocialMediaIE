@@ -7,7 +7,7 @@
  * Add flashtext support https://github.com/vi3k6i5/flashtext
  * Upload eLMo and fast text models based on tweets
  * Use code from NCRFpp - https://github.com/jiesutd/NCRFpp
- * Use SimpleELMO models (Elmo in various languages to perform SocialMediaIE on multiple languages) - https://github.com/ltgoslo/simple_elmo
+ * Use SimpleELMO models (Elmo in various languages to perform SocialMediaIE on multiple languages) - https://github.com/ltgoslo/simple_elmo - https://github.com/HIT-SCIR/ELMoForManyLangs
  
 
 ## Support arbitrary features
