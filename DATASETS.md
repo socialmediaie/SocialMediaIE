@@ -76,6 +76,7 @@
 * Twitter Language Identification - http://komunitatea.elhuyar.eus/tweetlid/
 * Twitter classification using open directory project categories - http://www.zubiaga.org/datasets/odptweets/
 * Twitter Trending Topic - http://nlp.uned.es/~damiano/datasets/TT-classification.html
+* Various Twitter datasets for personality classification as well as MSM2013 entity linking data - https://web.sas.upenn.edu/danielpr/resources/
 
 
 
