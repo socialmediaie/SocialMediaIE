@@ -108,6 +108,9 @@ https://github.com/sebastianruder/NLP-progress
 
 ## NER
 
+## Delicious 
+
+* SocialBM0311 is a large-scale social tagging/bookmarking dataset collected from Delicious.com - http://www.zubiaga.org/datasets/socialbm0311/
 
 
 ## Entity Linking
