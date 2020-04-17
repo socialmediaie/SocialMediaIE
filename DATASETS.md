@@ -71,6 +71,11 @@
 * Frame Semantics Twitter (AAAI 2015) - https://bitbucket.org/lowlands/release/src/master/AAAI15/ (Paper: https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9349)
 * SemEval 2017 dataset [Gold](https://www.dropbox.com/s/byzr8yoda6bua1b/2017_English_final.zip) - [Task Download](http://alt.qcri.org/semeval2017/task4/index.php?id=download-the-full-training-data-for-semeval-2017-task-4)
 * MTSA - Multiannotated tweet sentiment dataset - https://www.aclweb.org/anthology/N18-1171/ from [Sentiment Analysis: It’s Complicated!](https://www.aclweb.org/anthology/N18-1171/)
+* Freebase Annotations for TRAC KBA challenge (includes twitter stream data) - http://aws-publicdatasets.s3.amazonaws.com/trec/kba/FAKBA1/index.html
+* Twitter Machine Translation corpus - http://komunitatea.elhuyar.eus/tweetmt/resources/
+* Twitter Language Identification - http://komunitatea.elhuyar.eus/tweetlid/
+* Twitter classification using open directory project categories - http://www.zubiaga.org/datasets/odptweets/
+* Twitter Trending Topic - http://nlp.uned.es/~damiano/datasets/TT-classification.html
 
 
 
