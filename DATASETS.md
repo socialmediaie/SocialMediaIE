@@ -80,6 +80,8 @@
 * Weibo and Twitter data with 5,000 claims that scale to five million relevant microblog posts available at: http://alt.qcri.org/~wgao/data/rumdect.zip [Paper](https://www.ijcai.org/Proceedings/16/Papers/537.pdf)
 * Open domain targeted sentiment - https://web.archive.org/web/20200427155239/http://www.m-mitchell.com/code/
 * Tweet span sentiment identification - http://alt.qcri.org/semeval2014/task9/index.php?id=data-and-tools
+* Tweet stance detection - https://github.com/kennyjoseph/constance
+* Twitter Stereotype Extraction - https://github.com/kennyjoseph/twitter_stereotype_extraction
 
 
 
