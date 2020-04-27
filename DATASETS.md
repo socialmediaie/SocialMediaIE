@@ -159,3 +159,7 @@ https://github.com/sebastianruder/NLP-progress
 ## Question answering
 
 * Tweet QA - https://tweetqa.github.io/
+
+
+## Popularity prediction
+* Social Media Prediction Challenge - http://smp-challenge.com/
