@@ -84,6 +84,7 @@
 * Twitter Stereotype Extraction - https://github.com/kennyjoseph/twitter_stereotype_extraction
 * [Twitter Identity Extraction](https://github.com/kennyjoseph/identity_extraction_pub/tree/master/python/processed_data)
 * SemEval 2016 Task 6: Detecting Stance in Tweets - http://alt.qcri.org/semeval2016/task6/
+* Political Parody (politican tweets and their parody tweets) - https://archive.org/details/parody_data_acl20
 
 ## Facebook
 
