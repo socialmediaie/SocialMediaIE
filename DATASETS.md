@@ -87,6 +87,7 @@
 * Political Parody (politican tweets and their parody tweets) - https://archive.org/details/parody_data_acl20
 * Italian Twitter Corpus of Hate Speech - https://github.com/msang/hate-speech-corpus
 * UD_Italian-PoSTWITA: Italian Tweet Universal Dependencies - https://github.com/UniversalDependencies/UD_Italian-PoSTWITA
+* Italian Tweet Named Entity Linking - https://github.com/swapUniba/neel-it-twitter
 
 ## Facebook
 
