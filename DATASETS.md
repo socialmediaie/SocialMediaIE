@@ -1,9 +1,6 @@
 # List of datasets related to social media IE
 
-
-## Classification:
-
-### Twitter
+## Twitter
 * Hate and abusive speech - https://github.com/ENCASEH2020/hatespeech-twitter
 * Hate speech ICWSM 2017 - https://github.com/t-davidson/hate-speech-and-offensive-language
 * Moral Foundations Twitter Corpus - https://psyarxiv.com/w4f72 [\[JSON data\]](https://osf.io/k5n7y/)
@@ -86,8 +83,9 @@
 * SemEval 2016 Task 6: Detecting Stance in Tweets - http://alt.qcri.org/semeval2016/task6/
 * Political Parody (politican tweets and their parody tweets) - https://archive.org/details/parody_data_acl20
 * Italian Twitter Corpus of Hate Speech - https://github.com/msang/hate-speech-corpus
-* UD_Italian-PoSTWITA: Italian Tweet Universal Dependencies - https://github.com/UniversalDependencies/UD_Italian-PoSTWITA
+* UD_Italian-PoSTWITA: Italian Tweet Universal Dependencies - https://github.com/UniversalDependencies/UD_Italian-PoSTWITA [Another version with more details](https://github.com/conllul/UL_Italian-PoSTWITA)
 * Italian Tweet Named Entity Linking - https://github.com/swapUniba/neel-it-twitter
+
 
 ## Facebook
 
@@ -95,26 +93,26 @@
 * [FB What (or Who) Is Public? Privacy Settings and Social Media Content Sharing](http://eegilbert.org/papers/) - https://github.com/compsocial/WhatWhoCSCW2017
 * FB English Hindi Aggresion Identification - https://sites.google.com/view/trac1/shared-task
 
-### Youtube:
+## Youtube:
 
 * Sentube sentiment - https://github.com/Abdelghafour01/sentube-sentiment
 * Multimodal sentiment from video - https://github.com/soujanyaporia/multimodal-sentiment-analysis
 
-### Reddit
+## Reddit
 
 * Sarcasm detection - https://github.com/SenticNet/CASCADE
 * Self-annotated sarcasm corpora - http://nlp.cs.princeton.edu/SARC/2.0/ [Paper](https://www.aclweb.org/anthology/papers/L/L18/L18-1102/)
 * Conversational data - https://github.com/PolyAI-LDN/conversational-datasets
 
-### About.me
+## About.me
 
 * User identities from multiple social networks - https://github.com/WING-NUS/aboutme
 
-### Whatsapp
+## Whatsapp
 
 * ICWSM tutorial on collecting WhatsApp data - https://users.ics.aalto.fi/kiran/whatsapp-tutorial/
 
-### General
+## General
 https://github.com/sebastianruder/NLP-progress
 
 ## POS
