@@ -109,3 +109,4 @@ ENV/
 *.pth.tar
 temp/
 data/models*
+SocialMediaIE/legacy/

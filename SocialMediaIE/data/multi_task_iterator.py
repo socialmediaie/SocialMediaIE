@@ -15,7 +15,6 @@ from itertools import cycle, islice
 import random
 
 
-# Code for DatasetMingler taken from https://github.com/allenai/allennlp/blob/master/allennlp/tests/training/multi_task_trainer_test.py
 class DatasetMingler(Registrable):
     """
     Our ``DataIterator`` class expects a single dataset;
@@ -29,7 +28,6 @@ class DatasetMingler(Registrable):
         raise NotImplementedError
 
 
-# Code for RoundRobinMingler taken from https://github.com/allenai/allennlp/blob/master/allennlp/tests/training/multi_task_trainer_test.py
 @DatasetMingler.register("round-robin")
 class RoundRobinMingler(DatasetMingler):
     """
@@ -60,7 +58,6 @@ class RoundRobinMingler(DatasetMingler):
                         done.add(name)
 
 
-# Code for CustomHomogeneousBatchIterator taken from https://github.com/allenai/allennlp/blob/master/allennlp/tests/training/multi_task_trainer_test.py
 @DataIterator.register("custom_homogeneous_batch")
 class CustomHomogeneousBatchIterator(DataIterator):
     """
