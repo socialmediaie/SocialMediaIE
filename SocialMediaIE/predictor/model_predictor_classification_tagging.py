@@ -165,10 +165,11 @@ def run(args):
     # encoder = PassThroughEncoder(ELMO_EMBEDDING_DIM)
     model = MultiTaskCRFTaggerAndClassifier(word_embeddings, encoders, vocab, TASKS)
     model.load_state_dict(torch.load(os.path.join(SERIALIZATION_DIR, "best.th")))
-    model = model.cuda(device=CUDA_DEVICE)
+    if args.cuda:
+        model = model.cuda(device=CUDA_DEVICE)
 
-    # Empty cache to ensure larger batch can be loaded for testing
-    torch.cuda.empty_cache()
+        # Empty cache to ensure larger batch can be loaded for testing
+        torch.cuda.empty_cache()
     logger.info("Evaluating on test data")
 
     test_iterator = CustomHomogeneousBatchIterator(

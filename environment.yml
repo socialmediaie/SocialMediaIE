@@ -3,7 +3,7 @@ channels:
   - defaults
   - conda-forge
   - pytorch
-  - intel
+  #- intel
 dependencies:
   - python=3.6
   - numpy==1.15.4
@@ -14,9 +14,9 @@ dependencies:
   - ipython
   - ipykernel
   - pytorch==1.0.0
-  - cudatoolkit=9.0
-  - mkl
-  - intel-openmp
+  #- cudatoolkit=9.0
+  #- mkl
+  #- intel-openmp
   - umap-learn
   - pip
   - pip:
