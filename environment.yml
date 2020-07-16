@@ -13,14 +13,10 @@ dependencies:
   - tqdm
   - ipython
   - ipykernel
-  - pytorch
+  - pytorch==1.0.0
   - cudatoolkit=9.0
   - mkl
   - intel-openmp
   - umap-learn
   - pip:
-    - allennlp
-    - black
-    - pylint
-    - coverage
-    - pep8
+    - allennlp==0.8.3
