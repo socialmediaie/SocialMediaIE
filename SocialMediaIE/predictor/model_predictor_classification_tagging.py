@@ -164,7 +164,13 @@ def run(args):
 
     # encoder = PassThroughEncoder(ELMO_EMBEDDING_DIM)
     model = MultiTaskCRFTaggerAndClassifier(word_embeddings, encoders, vocab, TASKS)
-    model.load_state_dict(torch.load(os.path.join(SERIALIZATION_DIR, "best.th")))
+    map_location = "cpu" if not args.cuda else None
+    model.load_state_dict(
+      torch.load(
+        os.path.join(SERIALIZATION_DIR, "best.th"),
+        map_location=map_location
+      )
+    )
     if args.cuda:
         model = model.cuda(device=CUDA_DEVICE)
 
