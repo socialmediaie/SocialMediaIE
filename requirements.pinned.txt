@@ -80,7 +80,7 @@ murmurhash==1.0.2
 nb-conda-kernels==2.2.0
 nbconvert==5.3.1
 nbformat==4.4.0
-nltk==3.4
+nltk==3.4.5
 notebook==5.7.6
 numba==0.43.1
 numpy==1.15.4
