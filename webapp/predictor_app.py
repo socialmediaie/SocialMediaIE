@@ -15,6 +15,8 @@ app = Flask(__name__)
 
 SERIALIZATION_DIR = os.path.realpath("../data/models/all_multitask_stacked_l2_0_lr_1e-3_no_neel/")
 args = get_args(PREFIX, SERIALIZATION_DIR)
+args = args._replace(cuda=False)
+
 TASKS, vocab, model, readers, test_iterator = run(args)
 
 def tokenize(text):
