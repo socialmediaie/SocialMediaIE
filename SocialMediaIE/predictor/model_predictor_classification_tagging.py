@@ -88,7 +88,7 @@ from SocialMediaIE.scripts.multitask_multidataset_classification_tagging import 
 from SocialMediaIE.predictor.model_predictor import output_to_df, get_output_tokens
 from SocialMediaIE.predictor.model_predictor_classification import output_to_json as output_to_json_classification
 from SocialMediaIE.predictor.model_predictor_classification import get_output_label_probs
-
+from SocialMediaIE.predictor.utils import PREFIX, get_args
 
 
 logging.basicConfig(
@@ -185,46 +185,6 @@ def run(args):
     model = model.eval()
     model.set_inference_mode(True)
     return TASKS, vocab, model, readers, test_iterator
-
-
-from copy import deepcopy
-from collections import namedtuple
-
-ARG_KEYS = ('task',
- 'dataset_paths_file',
- 'dataset_path_prefix',
- 'model_dir',
- 'clean_model_dir',
- 'proj_dim',
- 'hidden_dim',
- 'encoder_type',
- 'multi_task_mode',
- 'dropout',
- 'lr',
- 'weight_decay',
- 'batch_size',
- 'epochs',
- 'patience',
- 'cuda',
- 'test_mode',
- 'residual_connection'
- )
-PREFIX = os.path.realpath("../")
-
-Arguments = namedtuple("ModelArgument", ARG_KEYS)
-
-def get_args(prefix, serialization_dir):
-    path = os.path.join(serialization_dir, "arguments.json")
-    with open(path) as fp:
-        args = json.load(fp)
-    args = deepcopy(args)
-    args["dataset_paths_file"] = os.path.realpath(os.path.join(prefix, *args["dataset_paths_file"].split("/")[-2:]))
-    args["dataset_path_prefix"] = os.path.realpath(os.path.join(prefix, args["dataset_path_prefix"].split("/")[-1]))
-    args["model_dir"] = os.path.realpath(serialization_dir)
-    args["test_mode"] = True
-    args["residual_connection"] = args.get("residual_connection", False)
-    args = Arguments(*[args[k] for k in Arguments._fields])
-    return args
 
 
 def get_instance(tokens, reader, vocab):

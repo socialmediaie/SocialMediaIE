@@ -84,7 +84,7 @@ from SocialMediaIE.scripts.multitask_multidataset_classification import (
     get_all_dataset_paths,
     cuda_device
 )
-
+from SocialMediaIE.predictor.utils import PREFIX, get_args
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -95,10 +95,6 @@ logger = logging.getLogger(__name__)
 
 
 def run(args):
-    ALL_DATASET_PATHS = get_all_dataset_paths(
-        args.dataset_paths_file, 
-        args.dataset_path_prefix
-    )
     SELECTED_TASK_NAMES = args.task
     PROJECTION_DIM = args.proj_dim
     HIDDEN_DIM = args.hidden_dim
@@ -117,9 +113,6 @@ def run(args):
     # device = torch.device(f"cuda:{CUDA_DEVICE}" if torch.cuda.is_available() and args.cuda else "cpu")
 
     TASKS = [TASK_CONFIGS[task_name] for task_name in SELECTED_TASK_NAMES]
-    dataset_paths = {
-        task_name: ALL_DATASET_PATHS[task_name] for task_name in SELECTED_TASK_NAMES
-    }
 
     tag_namespace_hashing_fn = {
         tag_namespace: i for i, tag_namespace in enumerate(TASK_CONFIGS.keys())
@@ -180,46 +173,6 @@ def run(args):
     model = model.eval()
     model.set_inference_mode(True)
     return TASKS, vocab, model, readers, test_iterator
-
-
-from copy import deepcopy
-from collections import namedtuple
-
-ARG_KEYS = ('task',
- 'dataset_paths_file',
- 'dataset_path_prefix',
- 'model_dir',
- 'clean_model_dir',
- 'proj_dim',
- 'hidden_dim',
- 'encoder_type',
- 'multi_task_mode',
- 'dropout',
- 'lr',
- 'weight_decay',
- 'batch_size',
- 'epochs',
- 'patience',
- 'cuda',
- 'test_mode',
- 'residual_connection'
- )
-PREFIX = os.path.realpath("../")
-
-Arguments = namedtuple("ModelArgument", ARG_KEYS)
-
-def get_args(prefix, serialization_dir):
-    path = os.path.join(serialization_dir, "arguments.json")
-    with open(path) as fp:
-        args = json.load(fp)
-    args = deepcopy(args)
-    args["dataset_paths_file"] = os.path.realpath(os.path.join(prefix, *args["dataset_paths_file"].split("/")[-2:]))
-    args["dataset_path_prefix"] = os.path.realpath(os.path.join(prefix, args["dataset_path_prefix"].split("/")[-1]))
-    args["model_dir"] = os.path.realpath(serialization_dir)
-    args["test_mode"] = True
-    args["residual_connection"] = args.get("residual_connection", False)
-    args = Arguments(*[args[k] for k in Arguments._fields])
-    return args
 
 
 def get_instance(tokens, reader, vocab):

@@ -162,8 +162,27 @@ def get_match_object(match):
     return obj
 
 
+def get_token_objects(text):
+    objects = [get_match_object(match) for match in get_match_iter(text)]
+    num_tokens = len(objects)
+    cleaned_objects = []
+    for i, obj in enumerate(objects):
+        obj["no_space"] = True
+        obj["token_idx"] = i
+        if obj["type"] == "space":
+            continue
+        if i < num_tokens-1 and objects[i+1]["type"] == "space":
+            obj["no_space"] = False
+        cleaned_objects.append(obj)
+    keys = cleaned_objects[0].keys()
+    final_sequences = {}
+    for k in keys:
+        final_sequences[k] = [obj[k] for obj in cleaned_objects]
+    return final_sequences
+
 COLUMN_ORDER = [
     "value",
+    "token_idx",
     "type",
     "span",
     "is_hashtag",
@@ -172,11 +191,11 @@ COLUMN_ORDER = [
     "is_emoji",
     "is_emoticon",
     "is_symbol",
+    "no_space"
 ]
 
 
 def tokens_as_df(text):
-    df = pd.DataFrame([get_match_object(match) for match in get_match_iter(text)])[
-        COLUMN_ORDER
-    ]
+    token_objects = get_token_objects(text)
+    df = pd.DataFrame(token_objects)[COLUMN_ORDER]
     return df
