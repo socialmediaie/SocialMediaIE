@@ -172,7 +172,7 @@ wasabi==0.2.1
 wcwidth==0.1.7
 webencodings==0.5.1
 websocket-client==0.56.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wheel==0.33.1
 wincertstore==0.2
 word2number==1.1
