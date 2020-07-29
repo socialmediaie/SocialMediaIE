@@ -4,6 +4,9 @@
 Social Media information extraction tool. It supports the following tasks: 
 * **Sequence Tagging**: Named Entity Recognition, Part of Speech, Chunking, CCG Supersense Tagging (List of datasets at: https://socialmediaie.github.io/datasets.html
 * **Classification**: Sentiment classification, Abusive Speech Classification, Uncertainity indicator classification
+* **Active Learning**: Classification tasks using active learning
+
+**Tutorial on using SocialMediaIE can be found at our [IC2S2 2020 tutorial website](https://socialmediaie.github.io/tutorials/IC2S2_2020/)**
 
 Please cite the following if using the tool: 
 
@@ -19,6 +22,7 @@ Please cite the following if using the tool:
 
 
 
+
 ## SociaMediaIE
 
 Main library for doing the analyis
@@ -26,6 +30,7 @@ Main library for doing the analyis
 ## Notebooks
 
 Example applications of the library and additional experiments
+* Tutorial on using SocialMediaIE can be found at our [IC2S2 2020 tutorial website](https://socialmediaie.github.io/tutorials/IC2S2_2020/)
 
 
 ## Experiments
