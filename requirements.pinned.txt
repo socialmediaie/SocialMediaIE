@@ -123,7 +123,7 @@ pytorch-pretrained-bert==0.6.1
 pytz==2018.9
 pywin32==224
 pywinpty==0.5.5
-PyYAML==5.1
+PyYAML==5.4
 pyzmq==18.0.0
 regex==2019.4.14
 requests==2.21.0
