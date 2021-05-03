@@ -33,14 +33,19 @@
   * Also include cost sensitive softmax-margin loss
 
 ## Multi task learning support
-  * Add task identification
-  * Add data shuffling
+  [x] Add task identification
+  [x] Add data shuffling
 
 ## Training
-  * Add logging to file all the training stats, implement a new callback
-  * Return the best epoch from the model training. Can be used in hyperopt along with num_epochs to find the hyperparams
+  [x] Add logging to file all the training stats, implement a new callback
+  [x] Return the best epoch from the model training. Can be used in hyperopt along with num_epochs to find the hyperparams
 
 ## Experiment API
   * Add hyperopt support for hyper parameter tuning for the experiment
-  * Log across experiments
-  * Experiment saves the best model, along with vocabs, data loaders
+  [x] Log across experiments
+  [x] Experiment saves the best model, along with vocabs, data loaders
+
+## Frontend
+
+* Add OpenDistro support for searching data using elastic search on various fields - https://opendistro.github.io/for-elasticsearch-docs/
+* Add ensemble predictions from the multi-task model based on the label similarity
