@@ -121,7 +121,7 @@ python-dotenv==0.10.1
 python-jose==2.0.2
 pytorch-pretrained-bert==0.6.1
 pytz==2018.9
-pywin32==224
+pywin32==301
 pywinpty==0.5.5
 PyYAML==5.4
 pyzmq==18.0.0
